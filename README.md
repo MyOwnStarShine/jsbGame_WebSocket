@@ -1,0 +1,2 @@
+# jsbGame_WebSocket
+一款基于SprintBoot和websocket的简单石头剪刀布游戏，适合新手学习，保存
