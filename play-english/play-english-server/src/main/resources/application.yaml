@@ -1,0 +1,24 @@
+# Spring configuration
+spring.application.admin.enabled: true
+spring.profiles.active: dev
+
+
+# Server configuration
+server:
+  port: 8088
+  tomcat:
+    max-threads: 128
+    max-connections: 1024
+    remote-ip-header: x-forwarded-for
+
+
+# multipart 配置
+spring.http.multipart:
+  enabled: true
+  file-size-threshold: 1MB
+  location: /tmp
+  max-file-size: 1MB
+  max-request-size: 10MB
+  resolve-lazily: false
+
+spring.mvc.servlet.load-on-startup: 1
